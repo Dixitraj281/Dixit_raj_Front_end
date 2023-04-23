@@ -41,4 +41,8 @@ WrappedListComponent.propTypes = {
     text: PropTypes.string.isRequired,
   })),
 };
+5.the items in WrappedListComponent.defaultProps cannot be null. They must have an array of elements. The correct code should be:
+WrappedListComponent.defaultProps = {
+  items: [{text: "Dixit Raj"}, {text: "12006314"}, {text: "B.Tech CSE"}, {text: "Frontend Assignment"}],
+};
 
